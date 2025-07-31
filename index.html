@@ -4,11 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Compra e Venda de Grãos | Feijão, Milho, Soja e Café | Agro Taceli</title>
-  <meta name="description" content="Corretora de grãos em Guaíra-SP especializada na compra e venda de feijão, milho, café e soja. Atendemos produtores, compradores e investidores com transparência, suporte e lucratividade.">
-  <meta name="keywords" content="compra e venda de grãos, corretora de grãos, feijão, milho, café, soja, investimento em grãos, armazenagem, agronegócio, lucros com grãos, Guaíra-SP, corretora agrícola em Guaíra">
+  <meta name="description" content="Corretora de grãos em Barretos-SP especializada na compra e venda de feijão, milho, café e soja. Atendemos produtores, compradores e investidores com transparência, suporte e lucratividade.">
+  <meta name="keywords" content="compra e venda de grãos, corretora de grãos, feijão, milho, café, soja, investimento em grãos, armazenagem, agronegócio, lucros com grãos, Barretos-SP, corretora agrícola em Barretos">
   <meta name="robots" content="index, follow">
-  <meta property="og:title" content="Agro Taceli | Corretora de Grãos e Investimento Agrícola em Guaíra-SP">
-  <meta property="og:description" content="Intermediação de grãos com suporte comercial, estrutura de armazenagem e oportunidades para investidores em Guaíra-SP.">
+  <meta property="og:title" content="Agro Taceli | Corretora de Grãos e Investimento Agrícola em Barretos-SP">
+  <meta property="og:description" content="Intermediação de grãos com suporte comercial, estrutura de armazenagem e oportunidades para investidores em Barretos-SP.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.agrotaceli.com.br">
   <link rel="canonical" href="https://www.agrotaceli.com.br">
@@ -39,9 +39,31 @@
       width: 100%;
       z-index: 1000;
     }
+	
+	    .logo img {
+      height: 75px;
+    }
 
-    .logo img {
-      height: 110px;
+    .area-cliente {
+      display: flex;
+      align-items: center;
+    }
+
+    .btn-cliente {
+      background-color: #ffffff;
+      color: #275330;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.3s, color 0.3s;
+      border: 2px solid #ffffff;
+    }
+
+    .btn-cliente:hover {
+      background-color: #275330;
+      color: #ffffff;
+      border-color: #275330;
     }
 
     nav ul {
@@ -59,10 +81,11 @@
       transition: all 0.3s ease;
     }
 
-    nav ul li a:hover {
-      background-color: #3b7a4e;
-      color: #ffcc00;
-    }
+nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* leve brilho branco */
+  color: #fff !important;
+}
+
 
     .menu-toggle {
       display: none;
@@ -83,13 +106,13 @@
         padding: 10px 20px;
       }
 
-      nav {
-        position: absolute;
-        top: 120px;
-        right: 0;
-        width: 100%;
-        background-color: #275330;
-      }
+  nav {
+    position: absolute;
+    top: 70px; /* ajuste esse valor até ficar ideal */
+    right: 0;
+    width: 100%;
+    background-color: #275330;
+  }
 
       nav ul {
         flex-direction: column;
@@ -119,7 +142,7 @@
     }
 
     .banner {
-      margin-top: 130px;
+      margin-top: 100px;
       width: 100%;
       height: auto;
     }
@@ -282,7 +305,7 @@
     }
 
     .rodape a:hover {
-      color: #ffcc00;
+      color: #ffffff;
     }
 
     .cookie-banner {
@@ -328,7 +351,6 @@
       }
     }
 
-    /* BOTÃO WHATSAPP */
     .whatsapp-button {
       position: fixed;
       bottom: 90px;
@@ -350,13 +372,34 @@
     .whatsapp-button img:hover {
       transform: scale(1.1);
     }
+	@media (max-width: 768px) {
+  .banner {
+    margin-top: 60px; /* ou até menos se quiser colar mais */
+  }
+}
+section[id] {
+  scroll-margin-top: 120px; /* igual ou maior que a altura do header */
+}
+@media (max-width: 768px) {
+  section[id] {
+    scroll-margin-top: 90px; /* celular ajustado */
+  }
+}
+@media (max-width: 768px) {
+  .banner picture {
+    display: block;
+    margin-top: 100px; /* valor pode ser ajustado conforme altura real do header */
+  }
+}
+
+
   </style>
 </head>
 <body>
 
   <header>
     <div class="logo">
-      <img src="https://i.imgur.com/yGiKxEH.png" alt="Logo Agro Taceli">
+      <img src="imagens/agro1.png" alt="Logo Agro Taceli">
     </div>
     <div class="menu-toggle" onclick="toggleMenu()">
       <div></div>
@@ -368,7 +411,7 @@
         <li><a href="#">Home</a></li>
         <li><a href="#sobre">Empresa</a></li>
         <li><a href="#atuacao">Atuação</a></li>
-        <li><a href="#">Parceiros</a></li>
+        <li><a href="#">Investidor</a></li>
         <li><a href="https://wa.me/5517997818991?text=Iniciar%20Atendimento">Contato</a></li>
       </ul>
     </nav>
@@ -376,8 +419,8 @@
 
 <section class="banner">
   <picture>
-    <source media="(max-width: 768px)" srcset="https://i.imgur.com/XmcFRr1.png">
-    <img src="https://i.imgur.com/hityKJz.png" alt="Banner Agro Taceli">
+    <source media="(max-width: 768px)" srcset="imagens/agro6.png">
+    <img src="imagens/agro2.png" alt="Banner Agro Taceli">
   </picture>
 </section>
 
@@ -385,13 +428,13 @@
   <div class="container">
 <div class="sobre-texto">
   <h2>Agro Taceli</h2>
-  <p>Com sede própria em Guaíra-SP, a Agro Taceli atua como corretora de grãos, especializada na intermediação de compra e venda de produtos agrícolas e insumos.</p>
-  <p>Focada nas negociações de feijão, milho, soja e café, a Agro Taceli se destaca como um elo estratégico entre produtores, compradores e distribuidores, contribuindo para o fortalecimento e dinamismo do mercado agrícola nacional.</p>
+  <p>Com sede própria em <strong>Barretos-SP</strong>, a <strong>Agro Taceli</strong> atua como corretora de grãos, especializada na intermediação de compra e venda de produtos agrícolas e insumos.</p>
+  <p>Focada nas negociações de feijão, milho, soja e café, a <strong>Agro Taceli</strong> se destaca como um elo estratégico entre produtores, compradores e distribuidores, contribuindo para o fortalecimento e dinamismo do mercado agrícola nacional.</p>
   <p>Profissionais do setor contam com a credibilidade, conhecimento técnico e experiência de mercado que a Agro Taceli oferece, garantindo segurança e eficiência em cada transação.</p>
 </div>
 
     <div class="imagem">
-      <img src="https://i.imgur.com/MaioC97.png" alt="Sobre a Agro Taceli">
+      <img src="imagens/agro3.png" alt="Sobre a Agro Taceli">
     </div>
   </div>
 </section>
@@ -401,13 +444,13 @@
 <section class="atuacao" id="atuacao">
   <div class="container">
     <div class="imagem">
-      <img src="https://i.imgur.com/hXTznBL.png" alt="Atuação Agro Taceli">
+      <img src="imagens/agro4.png" alt="Atuação Agro Taceli">
     </div>
 <div class="atuacao-texto">
   <h2>Atuação</h2>
-  <p>A Agro Taceli atua com forte presença nos estados de São Paulo e Minas Gerais, promovendo conexões comerciais sólidas entre produtores rurais, cooperativas, cerealistas, agroindústrias, moageiros e beneficiadores de grãos.</p>
+  <p>A <strong>Agro Taceli</strong> atua com forte presença nos estados de São Paulo e Minas Gerais, promovendo conexões comerciais sólidas entre produtores rurais, cooperativas, cerealistas, agroindústrias, moageiros e beneficiadores de grãos.</p>
   <p>Nosso compromisso vai além da intermediação de grãos: oferecemos assessoria comercial, acompanhamento próximo e suporte em todas as etapas da negociação, assegurando transparência, segurança e bom relacionamento entre as partes envolvidas.</p>
-  <p>A Agro Taceli acredita que cada operação bem conduzida contribui para o fortalecimento das parcerias, tornando-as mais consistentes e duradouras a cada nova safra.</p>
+  <p>A <strong>Agro Taceli</strong> acredita que cada operação bem conduzida contribui para o fortalecimento das parcerias, tornando-as mais consistentes e duradouras a cada nova safra.</p>
 </div>
 
   </div>
@@ -420,12 +463,12 @@
   <div class="container">
     <div class="sobre-texto">
       <h2>Invista em Grãos com a Agro Taceli</h2>
-      <p>Buscando uma forma segura e rentável de investir no agronegócio? A Agro Taceli, sediada em Guaíra-SP, oferece oportunidades exclusivas para investidores interessados em comprar grãos durante a safra, armazenar com infraestrutura própria e vender na entressafra, aproveitando a valorização natural do mercado.</p>
+      <p>Buscando uma forma segura e rentável de investir no agronegócio? <strong>A Agro Taceli</strong>, sediada em Barretos-SP, oferece oportunidades exclusivas para investidores interessados em comprar grãos durante a safra, armazenar com infraestrutura própria e vender na entressafra, aproveitando a valorização natural do mercado.</p>
       <p>Fazemos toda a corretagem, avaliação de mercado, intermediação com produtores e suporte logístico. Você acompanha cada etapa e maximiza seus lucros com segurança e transparência.</p>
-      <p><strong>Invista no futuro do agronegócio com quem entende do mercado em Guaíra e região.</strong></p>
+      <p><strong>Invista no futuro do agronegócio com quem entende do mercado em Barretos e região.</strong></p>
     </div>
     <div class="imagem">
-      <img src="https://i.imgur.com/p6Kn7U2.png" alt="Investimento em Grãos em Guaíra-SP">
+      <img src="imagens/agro7.png" alt="Investimento em Grãos em Barretos-SP">
     </div>
   </div>
 </section>
@@ -476,7 +519,7 @@
 
   <!-- BOTÃO FLUTUANTE WHATSAPP -->
   <a href="https://wa.me/5517997818991?text=Iniciar%20Atendimento" target="_blank" class="whatsapp-button">
-    <img src="https://i.imgur.com/wTQgnaR.png" alt="WhatsApp Agro Taceli">
+    <img src="imagens/agro5.png" alt="WhatsApp Agro Taceli">
   </a>
 
 <script>
@@ -496,6 +539,23 @@ faqQuestions.forEach(question => {
   });
 });
 </script>
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById('menu');
+    menu.classList.toggle('active');
+  }
+
+  // Fechar menu ao clicar em qualquer link no mobile
+  document.querySelectorAll('nav ul li a').forEach(link => {
+    link.addEventListener('click', () => {
+      const menu = document.getElementById('menu');
+      if (window.innerWidth <= 768 && menu.classList.contains('active')) {
+        menu.classList.remove('active');
+      }
+    });
+  });
+</script>
+
 </body>
 
 
